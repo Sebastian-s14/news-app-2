@@ -27,6 +27,10 @@ export const router = createBrowserRouter([
         element: <NewsDetail />,
       },
       {
+        path: '/favoritos',
+        element: <NewsDetail />,
+      },
+      {
         path: '/*',
         element: <NotFound />,
       },
