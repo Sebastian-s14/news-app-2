@@ -1,0 +1,14 @@
+.cardListImage {
+  &__container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    // max-width: 800px;
+    // overflow: auto;
+    flex-wrap: wrap;
+    // margin: 0px auto;
+  }
+  img {
+    max-width: 200px;
+  }
+}
