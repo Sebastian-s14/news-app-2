@@ -1,0 +1,11 @@
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 1300px;
+  //   align-items: center;
+  //   &:first-child {
+  //     width: 450px;
+  //   }
+}
