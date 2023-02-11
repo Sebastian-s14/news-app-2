@@ -3,7 +3,7 @@ import { persist } from 'zustand/middleware'
 import type { Product } from '../interfaces'
 
 interface favoriteNewsState {
-  favoriteNewsIds: Product[]
+  favoriteNews: Product[]
   addFavoriteNew: (id: Product) => void
   removeFavoriteNew: (id: number) => void
 }
@@ -11,15 +11,15 @@ interface favoriteNewsState {
 export const useFavoriteNewsStore = create<favoriteNewsState>()(
   persist(
     (set) => ({
-      favoriteNewsIds: [],
+      favoriteNews: [],
       addFavoriteNew: (product: Product) => {
         set((state) => ({
-          favoriteNewsIds: [...state.favoriteNewsIds, product],
+          favoriteNews: [...state.favoriteNews, product],
         }))
       },
       removeFavoriteNew: (id: number) => {
         set((state) => ({
-          favoriteNewsIds: state.favoriteNewsIds.filter(
+          favoriteNews: state.favoriteNews.filter(
             (product) => product.id !== id,
           ),
         }))
