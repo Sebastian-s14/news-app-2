@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 
-import { Layout } from '../layouts'
+import { Layout } from '../ui'
 import { Home, NewsDetail, NotFound } from '../pages'
 // import { loader as newsLoader } from '../pages/News'
 // import queryClient from '../queryClient'

@@ -1,0 +1,13 @@
+.layout {
+  min-height: 100vh;
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  background-color: cornsilk;
+}
+
+.main {
+  padding: 1rem;
+  display: grid;
+  // background-color: skyblue;
+}

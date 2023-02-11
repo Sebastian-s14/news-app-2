@@ -1,0 +1,10 @@
+// .active {
+//   background-color: red;
+// }
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    font-weight: bold;
+  }
+}
