@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useAuthStore } from '../../hooks'
 import type { Product } from '../../interfaces'
 import { slugify } from '../../utils'
 
@@ -11,9 +12,10 @@ interface CardProps {
 
 export const Card = ({ product, maxWidth }: CardProps) => {
   const slug = slugify(product?.title ?? '')
+  const { isAuthenticated } = useAuthStore()
 
   return (
-    <article className="card" style={{ maxWidth }}>
+    <article className="card" style={{ maxWidth }} aria-invalid="false">
       <div className="card__text">
         <h2 className="card__title">
           <Link className="card__link" to={`news/${slug}`}>
@@ -29,6 +31,7 @@ export const Card = ({ product, maxWidth }: CardProps) => {
           src={product?.thumbnail}
           alt={product?.title}
         />
+        {isAuthenticated && <button>💖</button>}
       </div>
     </article>
   )

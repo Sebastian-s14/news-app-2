@@ -16,7 +16,7 @@ export const findProducts = async (q: string) => {
     url: '/products/search',
     params: {
       q,
-      limit: 5,
+      limit: 20,
     },
   })
   return data
