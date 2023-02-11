@@ -16,10 +16,10 @@ const sections: ISections[] = [
     name: 'Deportes',
     to: '/',
   },
-  {
-    name: 'Política',
-    to: '/',
-  },
+  // {
+  //   name: 'Política',
+  //   to: '/',
+  // },
   {
     name: 'Tecnología',
     to: '/',
@@ -36,6 +36,9 @@ export const Header = () => {
           ))}
         </ul>
       </nav>
+      <div>
+        <button>Login</button>
+      </div>
     </header>
   )
 }

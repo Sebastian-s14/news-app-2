@@ -8,6 +8,11 @@ const Home = () => {
 
   return (
     <>
+      <input
+        type="search"
+        placeholder="buscar..."
+        style={{ maxWidth: 1100, marginTop: 50 }}
+      />
       <CardList data={data?.products ?? []} />
     </>
   )
