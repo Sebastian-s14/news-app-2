@@ -10,11 +10,11 @@ export const useValidateAuthentication = () => {
       if (user) {
         // User is signed in, see docs for a list of available properties
         // https://firebase.google.com/docs/reference/js/firebase.User
-        console.log(user.email)
+        // console.log(user.email)
         const uid = user.uid
-        console.log(uid)
+        // console.log(uid)
         // ...
-        console.log('logueadoooo')
+        // console.log('logueadoooo')
         setIsAuthenticated(true)
         // setIsLoading(false)
         setUser({
@@ -26,7 +26,7 @@ export const useValidateAuthentication = () => {
       } else {
         // User is signed out
         // ...
-        console.log('no logueado')
+        // console.log('no logueado')
         setIsAuthenticated(false)
         // setIsLoading(false)
       }

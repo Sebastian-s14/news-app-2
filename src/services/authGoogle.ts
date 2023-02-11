@@ -20,8 +20,8 @@ export const signInWithGoogle = () => {
       // The signed-in user info.
       const user = result.user
       // ...
-      console.log(token)
-      console.log(user)
+      // console.log(token)
+      // console.log(user)
     })
     .catch((error) => {
       // Handle Errors here.
@@ -34,8 +34,8 @@ export const signInWithGoogle = () => {
       // ...
       console.log(errorCode)
       console.log(errorMessage)
-      console.log(email)
-      console.log(credential)
+      // console.log(email)
+      // console.log(credential)
     })
 }
 export const signOutGoogle = () => {
@@ -43,10 +43,10 @@ export const signOutGoogle = () => {
   signOut(auth)
     .then(() => {
       // Sign-out successful.
-      console.log('Sign-out successful.')
+      // console.log('Sign-out successful.')
     })
     .catch((error) => {
-      console.log('error in signOut')
+      // console.log('error in signOut')
       console.log(error)
     })
 }
