@@ -1,9 +1,15 @@
+import { CardList } from '../components'
 import { useFetchProducts } from '../hooks'
 
-export const Home = () => {
+const Home = () => {
   const { data } = useFetchProducts()
 
-  console.log({ data: data?.products })
+  // console.log({ data: data?.products })
 
-  return <div>Home</div>
+  return (
+    <>
+      <CardList data={data?.products ?? []} />
+    </>
+  )
 }
+export default Home

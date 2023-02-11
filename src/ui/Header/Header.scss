@@ -3,6 +3,9 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(246, 216, 94);
   &__links {
     display: flex;
     flex-direction: row;

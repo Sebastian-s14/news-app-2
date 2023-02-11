@@ -1,7 +1,13 @@
+/* eslint-disable @typescript-eslint/promise-function-async */
+import { lazy } from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 
 import { Layout } from '../ui'
-import { Home, NewsDetail, NotFound } from '../pages'
+
+const Home = lazy(() => import('../pages/Home'))
+const NewsDetail = lazy(() => import('../pages/NewsDetail'))
+const NotFound = lazy(() => import('../pages/NotFound'))
+// import { Home, NewsDetail, NotFound } from '../pages'
 // import { loader as newsLoader } from '../pages/News'
 // import queryClient from '../queryClient'
 
